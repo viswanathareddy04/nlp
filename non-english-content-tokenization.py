@@ -6,5 +6,5 @@ Created on Fri Sep  3 07:27:48 2021
 """
 import nltk.data
 tokenize_spanish = nltk.data.load('tokenizers/punkt/spanish.pickle')
-file_contents = open(r'spanish-content.txt',  encoding="utf8").read()
+file_contents = open(r'data/spanish-content.txt',  encoding="utf8").read()
 tokens= tokenize_spanish.tokenize(file_contents)

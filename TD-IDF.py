@@ -12,7 +12,7 @@ from nltk.corpus import stopwords
 import re
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-file_contents = open("english-content.txt", 'r').read()
+file_contents = open("data/english-content.txt", 'r').read()
 lemma = WordNetLemmatizer()
 sentences = nltk.sent_tokenize(file_contents)
 corpus =[]

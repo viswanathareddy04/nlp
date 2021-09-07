@@ -9,7 +9,7 @@ import nltk.tokenize
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 
-file_contents = open("english-content.txt").read()
+file_contents = open("data/english-content.txt").read()
 
 sentences = nltk.sent_tokenize(file_contents)
 stemmer =  PorterStemmer()

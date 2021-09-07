@@ -9,7 +9,7 @@ import  nltk.tokenize
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 
-file_contents = open("english-content.txt", 'r').read()
+file_contents = open("data/english-content.txt", 'r').read()
 sentences = nltk.sent_tokenize(file_contents)
 lemma = WordNetLemmatizer()
 

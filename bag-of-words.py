@@ -12,7 +12,7 @@ from nltk.corpus import stopwords
 import re
 from sklearn.feature_extraction.text import CountVectorizer
 
-file_contents = open('english-content.txt').read()
+file_contents = open('data/english-content.txt').read()
 ps = PorterStemmer()
 wnl = WordNetLemmatizer()
 sentences = nltk.sent_tokenize(file_contents)
