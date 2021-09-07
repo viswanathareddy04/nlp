@@ -30,7 +30,7 @@ for i in range(len(df)):
     corpus.append(words)
     
 
-cv = CountVectorizer()
+cv = CountVectorizer(max_features=5000)
 X = cv.fit_transform(corpus).toarray()
 
 y = pd.get_dummies(df['v1'])
